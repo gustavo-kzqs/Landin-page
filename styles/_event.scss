@@ -1,0 +1,64 @@
+@import "./variaveis";
+
+.event{
+    padding: 80px 0;
+
+    &--jogador{
+        background-image: linear-gradient($blue, $blue2);
+    }
+
+    &--churrasco{
+        background-image: linear-gradient($blue2, $yellow2);
+    }
+    &--bebida{
+        background-image: linear-gradient($yellow2, $orange);
+    }
+    &--farofa{
+        background-image: linear-gradient($orange, $blue);
+    }
+   
+    &__image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image{
+        max-width: 400px;
+        border-radius: 4px;
+        
+    }
+
+    &__details{
+        &__title{
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description{
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px){
+        .container{
+            display: block;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__details{
+            margin-bottom: 16px;
+            margin-right: 0;
+        }
+    }
+}
