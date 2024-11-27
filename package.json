@@ -1,8 +1,8 @@
 {
   "name": "exercicio_parcel",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
+    "build": "parcel build src/index.html",
     "dev": "parcel src/index.html styles/main.scss src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
